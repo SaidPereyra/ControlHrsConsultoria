@@ -1,0 +1,22 @@
+﻿@model ControlHrsConsultoria.Models.ViewModel.RecoveryViewModel
+@{
+    ViewBag.Title = "StartRecovery";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="row">
+    <div class="col-md-6 offset-3">
+        <div class="form-style">
+            <form action="@Url.Content("~/Access/StartRecovery")" method="post">
+                <label>Escribe tu correo electrónico</label>
+                @Html.TextBoxFor(d => d.correo, null, new { @class = "form-control", placeholder ="Correo Electrónico" })
+                @Html.ValidationMessageFor(d => d.correo, null, new { style = "color:red;" })
+                <br />
+                <div class="text-right">
+                    <button class="btn btn-primary">Recuperar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
