@@ -17,6 +17,33 @@ namespace ControlHrsConsultoria.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public ActionResult Index(string correo, string contrasenia)
+        {
+            try
+            {
+                using (Models.ControlHrsConsultoriaEntities db = new Models.ControlHrsConsultoriaEntities())
+                {
+                    var isUser = (from t in db.Usuario
+                                  where t.correo == correo.Trim() && t.contraseña == contrasenia.Trim()
+                                  select t).FirstOrDefault();
+                    if (isUser == null)
+                    {
+                        ViewBag.Error = "Usuario o contraseña incorrectos";
+                        return View();
+                    }
+
+                    Session["User"] = isUser;
+                }
+                return RedirectToAction("Index", "Home");
+
+            }
+            catch (Exception e)
+            {
+                ViewBag.Error = e.Message;
+                return View();
+            }
+        }
         [HttpGet]
         public ActionResult StartRecovery()
         {

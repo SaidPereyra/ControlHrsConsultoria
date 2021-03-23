@@ -15,17 +15,17 @@
     <br />
     <div class="col-md-6 offset-3">
         <div class="form-style">
-            <form>
+            <form action="@Url.Content("~/Access/Index")" method="post">
 
                 <label>Usuario</label>
-                <input class="form-control" type="text" />
+                <input class="form-control" type="text" name="correo" />
                 <label>Contraseña</label>
-                <input class="form-control" type="text" />
+                <input class="form-control" type="password" name="contrasenia" />
 
 
                 <br />
                 <div class="text-right">
-                    <button class="btn btn-primary">Iniciar sesión</button>
+                    <input type="submit" class="btn btn-primary" value="Iniciar sesión" />
                 </div>
                 <div>
                     @Html.ActionLink("Olvidaste tu contraseña?", "StartRecovery")
