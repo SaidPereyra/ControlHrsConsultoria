@@ -130,6 +130,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccessController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProyectoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -181,6 +182,8 @@
     <Compile Include="Models\Usuario.cs">
       <DependentUpon>DB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ViewModel\FProyectoViewModel.cs" />
+    <Compile Include="Models\ViewModel\ProyectoViewModel.cs" />
     <Compile Include="Models\ViewModel\RecoveryPasswordViewModel.cs" />
     <Compile Include="Models\ViewModel\RecoveryViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -199,6 +202,7 @@
       <LastGenOutput>DB.Context.cs</LastGenOutput>
       <DependentUpon>DB.edmx</DependentUpon>
     </Content>
+    <Content Include="Models\DB.edmx.sql" />
     <Content Include="Models\DB.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DB.edmx</DependentUpon>
@@ -241,6 +245,8 @@
     <Content Include="Views\Access\StartRecovery.cshtml" />
     <Content Include="Views\Access\Recovery.cshtml" />
     <Content Include="Views\Access\Index.cshtml" />
+    <Content Include="Views\Proyecto\Index.cshtml" />
+    <Content Include="Views\Proyecto\Editar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

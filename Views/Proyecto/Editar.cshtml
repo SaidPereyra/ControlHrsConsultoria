@@ -1,0 +1,69 @@
+﻿@model ControlHrsConsultoria.Models.ViewModel.FProyectoViewModel
+
+@{
+    ViewBag.Title = "Editar proyecto";
+}
+<br />
+<br />
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm("Editar", "Proyecto", FormMethod.Post))
+{
+    <div class="row">
+        <div class="col-md-12">
+            @Html.HiddenFor(d => d.IdProyecto)
+            <div>
+                @Html.LabelFor(d => d.Nombre)
+                @Html.TextBoxFor(d => d.Nombre, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.Nombre, null, new { @class = "red" })
+            </div>
+            <div>
+                @Html.LabelFor(d => d.Descripcion)
+                @Html.TextAreaFor(d => d.Descripcion, new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.Descripcion, null, new { @class = "red" })
+            </div>
+
+            <div>
+                @Html.LabelFor(d => d.MontoPrecio)
+                @Html.TextBoxFor(d => d.MontoPrecio, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.MontoPrecio, null, new { @class = "red" })
+            </div>
+
+            <div>
+                @Html.LabelFor(d => d.Costo)
+                @Html.TextBoxFor(d => d.Costo, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.Costo, null, new { @class = "red" })
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    @Html.LabelFor(d => d.FechaInicio)<br />
+                    @Html.EditorFor(d => d.FechaInicio, "", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.FechaInicio, null, new { @class = "red" })
+                </div>
+
+                <div class="col-md-6">
+                    @Html.LabelFor(d => d.FechaFinal)<br />
+                    @Html.EditorFor(d => d.FechaFinal, "", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.FechaFinal, null, new { @class = "red" })
+                </div>
+            </div>
+            <br />
+            <div>
+                @Html.LabelFor(d => d.Status)
+                @Html.CheckBoxFor(d => d.Status)
+                @Html.ValidationMessageFor(d => d.Status, null, new { @class = "red" })
+            </div>
+
+
+            <div style="text-align:right;">
+                <input value="Editar" class="btn btn-primary" type="submit" />
+                <a href="~/Proyecto/" class="btn btn-danger">Cancelar</a>
+            </div>
+
+        </div>
+
+    </div>
+
+}
+

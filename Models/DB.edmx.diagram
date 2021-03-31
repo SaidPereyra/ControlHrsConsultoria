@@ -5,26 +5,26 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="1e7c0f58bc854c4bba2b93187e63e82a" Name="Diagram1">
-        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Cliente" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Consultor" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Idioma" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Modulo" Width="1.5" PointX="7.75" PointY="8" IsExpanded="true" />
-        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Operacion" Width="1.5" PointX="10" PointY="7.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Perfil" Width="1.5" PointX="5.25" PointY="8.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Proyecto" Width="1.5" PointX="5.25" PointY="13" IsExpanded="true" />
-        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Proyecto_Consultor_Cliente" Width="1.5" PointX="7.5" PointY="2.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Rol" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.sysdiagrams" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Usuario" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
-        <AssociationConnector Association="ControlHrsConsultoriaModel.FK_Cliente_Usuario" ManuallyRouted="false" />
-        <AssociationConnector Association="ControlHrsConsultoriaModel.FK_Proyecto_Consultor_Cliente_Cliente" ManuallyRouted="false" />
-        <AssociationConnector Association="ControlHrsConsultoriaModel.FK_Consultor_Usuario" ManuallyRouted="false" />
-        <AssociationConnector Association="ControlHrsConsultoriaModel.FK_Proyecto_Consultor_Cliente_Consultor" ManuallyRouted="false" />
-        <AssociationConnector Association="ControlHrsConsultoriaModel.FK_Perfil_Idioma" ManuallyRouted="false" />
-        <AssociationConnector Association="ControlHrsConsultoriaModel.FK_Operacion_Modulo" ManuallyRouted="false" />
-        <AssociationConnector Association="ControlHrsConsultoriaModel.FK_Proyecto_Consultor_Cliente_Perfil" ManuallyRouted="false" />
-        <AssociationConnector Association="ControlHrsConsultoriaModel.FK_Proyecto_Consultor_Cliente_Proyecto" ManuallyRouted="false" />
-        <AssociationConnector Association="ControlHrsConsultoriaModel.FK_Usuario_Rol" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Cliente" Width="1.5" PointX="5.25" PointY="1.875" />
+        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Consultor" Width="1.5" PointX="5.25" PointY="5.125" />
+        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Idioma" Width="1.5" PointX="1.25" PointY="7.625" />
+        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Modulo" Width="1.5" PointX="7.75" PointY="8" />
+        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Operacion" Width="1.5" PointX="10" PointY="7.875" />
+        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Perfil" Width="1.5" PointX="3.5" PointY="7.25" />
+        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Proyecto" Width="1.5" PointX="5.25" PointY="8.25" />
+        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Proyecto_Consultor_Cliente" Width="3" PointX="7.5" PointY="2.875" />
+        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Rol" Width="1.5" PointX="0.75" PointY="4" />
+        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.sysdiagrams" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ControlHrsConsultoriaModel.Usuario" Width="1.5" PointX="3" PointY="3" />
+        <AssociationConnector Association="ControlHrsConsultoriaModel.FK_Cliente_Usuario" />
+        <AssociationConnector Association="ControlHrsConsultoriaModel.FK_Proyecto_Consultor_Cliente_Cliente" />
+        <AssociationConnector Association="ControlHrsConsultoriaModel.FK_Consultor_Usuario" />
+        <AssociationConnector Association="ControlHrsConsultoriaModel.FK_Proyecto_Consultor_Cliente_Consultor" />
+        <AssociationConnector Association="ControlHrsConsultoriaModel.FK_Perfil_Idioma" />
+        <AssociationConnector Association="ControlHrsConsultoriaModel.FK_Operacion_Modulo" />
+        <AssociationConnector Association="ControlHrsConsultoriaModel.FK_Proyecto_Consultor_Cliente_Perfil" />
+        <AssociationConnector Association="ControlHrsConsultoriaModel.FK_Proyecto_Consultor_Cliente_Proyecto" />
+        <AssociationConnector Association="ControlHrsConsultoriaModel.FK_Usuario_Rol" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
