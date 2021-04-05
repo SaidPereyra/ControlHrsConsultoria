@@ -53,7 +53,7 @@ namespace ControlHrsConsultoria.Controllers
                         oUsuario.fechaRegistro = model.fechaRegistro;
                         oUsuario.status = model.status;
                         oUsuario.idRol = model.idRol;
-                        oUsuario.idCliente = model.idCliente;
+                        
 
                         db.Usuario.Add(oUsuario);
                         db.SaveChanges();
@@ -83,7 +83,7 @@ namespace ControlHrsConsultoria.Controllers
                 model.fechaRegistro = oUsuario.fechaRegistro;
                 model.status = oUsuario.status;
                 model.idRol = oUsuario.idRol;
-                model.idCliente = oUsuario.idCliente;
+                
             }
             return View(model);
         }
@@ -105,7 +105,7 @@ namespace ControlHrsConsultoria.Controllers
                         oUsuario.fechaRegistro = model.fechaRegistro;
                         oUsuario.status = model.status;
                         oUsuario.idRol = model.idRol;
-                        oUsuario.idCliente = model.idCliente;
+                        
 
                         db.Entry(oUsuario).State = System.Data.Entity.EntityState.Modified;
                         db.SaveChanges();

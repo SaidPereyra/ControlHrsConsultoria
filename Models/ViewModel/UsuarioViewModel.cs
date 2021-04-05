@@ -43,7 +43,6 @@ namespace ControlHrsConsultoria.Models.ViewModel
         [Required]
         [Display(Name = "Rol de usuario")]
         public Nullable<int> idRol { get; set; }
-        [Display(Name = "ID de cliente")]
-        public Nullable<int> idCliente { get; set; }
+        
     }
 }

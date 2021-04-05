@@ -18,16 +18,19 @@
         <div class="form-group">
             @Html.LabelFor(d => d.apellidos)
             @Html.TextBoxFor(d => d.apellidos, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.apellidos, null, new { @class = "text-danger" })
         </div>
 
         <div class="form-group">
             @Html.LabelFor(d => d.correo)
             @Html.TextBoxFor(d => d.correo, "", new { @type = "email", @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.correo, null, new { @class = "text-danger" })
         </div>
 
         <div class="form-group">
             @Html.LabelFor(d => d.fechaRegistro)
             @Html.EditorFor(d => d.fechaRegistro, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.fechaRegistro, null, new { @class = "text-danger" })
         </div>
 
         <div class="form-group">
@@ -36,22 +39,19 @@
                 <option value="True">Habilitado</option>
                 <option value="False">Inhabilitado</option>
             </select>
-
+            @Html.ValidationMessageFor(d => d.status, null, new { @class = "text-danger" })
         </div>
 
         <div class="form-group">
             @Html.LabelFor(d => d.idRol)
             @Html.TextBoxFor(d => d.idRol, "", new { @type = "number", @class = "form-control" })
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(d => d.idCliente)
-            @Html.TextBoxFor(d => d.idCliente, "", new { @type = "number", @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.idRol, null, new { @class = "text-danger" })
         </div>
 
         <div class="form-group">
             @Html.LabelFor(d => d.contraseña)
             @Html.TextBoxFor(d => d.contraseña, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.contraseña, null, new { @class = "text-danger" })
         </div>
         <div class="row" />
         <div style="text-align:right;">

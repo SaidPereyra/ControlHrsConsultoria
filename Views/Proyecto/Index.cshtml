@@ -1,15 +1,16 @@
 ﻿@model List<ControlHrsConsultoria.Models.ViewModel.ProyectoViewModel>
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Administrador";
 }
 <br />
 <br />
-<h2>Admin</h2>
+<h2>@ViewBag.Title</h2>
 
 <div class="row">
     <div class="col-md-2">
         <ul class="nav nav-pills nav-stacked">
-            <li role="presentation" class="active"><a href="#">Proyectos</a></li>
+            <li role="presentation" class="active"><a href="~/Proyecto/">Proyectos</a></li>
+            <li role="presentation"><a href="~/Usuario/">Usuarios</a></li>
             <li role="presentation"><a href="#">Consultores</a></li>
             <li role="presentation"><a href="#">Clientes</a></li>
         </ul>
@@ -21,7 +22,7 @@
                 <div class="row">
                     <div class="col-md-2"> Proyectos</div>
                     <div class="col-md-8"></div>
-                    <div class="col-md-2"><a href="~/Proyecto/Nuevo" class="btm btn-primary" style="text-align: right; padding: 5px">Nuevo Proyecto</a></div>
+                    <div class="col-md-2"><a href="~/Proyecto/Nuevo" class="btn btn-primary">Nuevo Proyecto</a></div>
                 </div>
                 
             </div>

@@ -130,12 +130,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccessController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-<<<<<<< HEAD
-    <Compile Include="Controllers\ProyectoController.cs" />
-=======
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Filters\VerificaSesion.cs" />
->>>>>>> 99d20e90a1bcd26642a4c25c81c4b5acad7a7be4
+    <Compile Include="Controllers\ProyectoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -252,14 +249,12 @@
     <Content Include="Views\Access\StartRecovery.cshtml" />
     <Content Include="Views\Access\Recovery.cshtml" />
     <Content Include="Views\Access\Index.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Proyecto\Index.cshtml" />
     <Content Include="Views\Proyecto\Editar.cshtml" />
-=======
     <Content Include="Views\Usuario\Index.cshtml" />
     <Content Include="Views\Usuario\Nuevo.cshtml" />
     <Content Include="Views\Usuario\Editar.cshtml" />
->>>>>>> 99d20e90a1bcd26642a4c25c81c4b5acad7a7be4
+    <Content Include="Views\Proyecto\Nuevo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
