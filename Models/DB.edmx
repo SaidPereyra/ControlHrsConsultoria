@@ -117,7 +117,6 @@
           <Property Name="fechaRegistro" Type="datetime" />
           <Property Name="status" Type="bit" />
           <Property Name="idRol" Type="int" />
-          <Property Name="idCliente" Type="int" />
           <Property Name="token_recovery" Type="varchar" MaxLength="200" />
         </EntityType>
         <Association Name="FK_Cliente_Usuario">
@@ -457,7 +456,6 @@
           <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
           <Property Name="status" Type="Boolean" />
           <Property Name="idRol" Type="Int32" />
-          <Property Name="idCliente" Type="Int32" />
           <Property Name="token_recovery" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Cliente" Relationship="ControlHrsConsultoriaModel.FK_Cliente_Usuario" FromRole="Usuario" ToRole="Cliente" />
           <NavigationProperty Name="Consultor" Relationship="ControlHrsConsultoriaModel.FK_Consultor_Usuario" FromRole="Usuario" ToRole="Consultor" />
@@ -691,7 +689,6 @@
             <EntityTypeMapping TypeName="ControlHrsConsultoriaModel.Usuario">
               <MappingFragment StoreEntitySet="Usuario">
                 <ScalarProperty Name="token_recovery" ColumnName="token_recovery" />
-                <ScalarProperty Name="idCliente" ColumnName="idCliente" />
                 <ScalarProperty Name="idRol" ColumnName="idRol" />
                 <ScalarProperty Name="status" ColumnName="status" />
                 <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />

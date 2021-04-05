@@ -35,7 +35,7 @@ namespace ControlHrsConsultoria.Controllers
 
                     Session["User"] = isUser;
                 }
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Proyecto");
 
             }
             catch (Exception e)

@@ -1,17 +1,32 @@
 ﻿@model List<ControlHrsConsultoria.Models.ViewModel.ListUsuarioViewModel>
 @{
-    ViewBag.Title = "Usuarios";
+    ViewBag.Title = "Administrador";
 }
 
 <h2>@ViewBag.Title</h2>
 
-<div class="row" style="text-align:right;padding:5px;">
-<a href="~/Usuario/Nuevo" class="btn btn-primary">Agregar usuario</a>
-</div>
-
 <div class="row">
-    <div class="col-md-12">
-        <div class="table-responsive">
+    
+    <div class="col-md-2">
+        <ul class="nav nav-pills nav-stacked">
+            <li role="presentation"><a href="~/Proyecto/">Proyectos</a></li>
+            <li role="presentation" class="active"><a href="#">Usuarios</a></li>
+            <li role="presentation"><a href="#">Consultores</a></li>
+            <li role="presentation"><a href="#">Clientes</a></li>
+        </ul>
+    </div>
+    <div class="col-md-10">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-md-2">Usuarios</div>
+                    <div class="col-md-8"></div>
+                    <div class="col-md-2"><a href="~/Usuario/Nuevo" class="btn btn-primary" >Agregar usuario</a></div>
+                </div>
+            </div>
+
+            <!-- Table -->
             <table class="table">
                 <tr>
                     <th>ID</th>
@@ -38,9 +53,9 @@
                         </td>
                     </tr>
                 }
-
             </table>
         </div>
     </div>
 </div>
+
 
