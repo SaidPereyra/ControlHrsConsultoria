@@ -1,0 +1,48 @@
+﻿@model ControlHrsConsultoria.Models.ViewModel.PCCViewModel
+@{
+    ViewBag.Title = "Editar";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm("Editar", "PCC", FormMethod.Post))
+{
+
+    <div class="row">
+        <div class="col-md-12">
+            @Html.HiddenFor(d => d.idDetalle)
+
+            <div class="form-group">
+                @Html.LabelFor(d => d.descripcion)
+                @Html.TextBoxFor(d => d.descripcion, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.descripcion, null, new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(d => d.fechaInicio)
+                @Html.EditorFor(d => d.fechaInicio, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.fechaInicio, null, new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(d => d.fechaFinal)
+                @Html.EditorFor(d => d.fechaFinal, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.fechaFinal, null, new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(d => d.cantidadHrs)
+                @Html.TextBoxFor(d => d.cantidadHrs, "", new { @type = "number", @step = "any", @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.cantidadHrs, null, new { @class = "text-danger" })
+            </div>
+
+            <div class="row" />
+            <div style="text-align:right;">
+                <input value="Guardar" class="btn btn-primary" type="submit" />
+                <a href="~/PCC/" class="btn btn-danger">Cancelar</a>
+            </div>
+        </div>
+    </div>
+
+}
+

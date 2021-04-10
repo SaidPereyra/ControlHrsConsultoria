@@ -1,0 +1,50 @@
+﻿@model List<ControlHrsConsultoria.Models.ViewModel.ListPCCViewModel>
+@{
+    ViewBag.Title = "Proyectos asignados";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table">
+            <tr>
+                <th>#Detalle</th>
+                <th>#Proyecto</th>
+                <th>#Consultor</th>
+                <th>#Perfil</th>
+                <th>#Cliente</th>
+                <th>Monto Precio</th>
+                <th>Costo</th>
+                <th>Descripción</th>
+                <th class="cntr">Fecha de Inicio</th>
+                <th class="cntr">Fecha Final</th>
+                <th>Cantidad de Horas</th>
+                <th>Accion</th>
+            </tr>
+            @foreach(var oElemento in Model)
+            {
+                <tr>
+                    <td class="cntr">@oElemento.idDetalle</td>
+                    <td class="cntr">@oElemento.idProyecto</td>
+                    <td class="cntr">@oElemento.idConsultor</td>
+                    <td class="cntr">@oElemento.idPerfil</td>
+                    <td class="cntr">@oElemento.idCliente</td>
+                    <td class="cntr">@oElemento.montoPrecio</td>
+                    <td class="cntr">@oElemento.costo</td>
+                    <td>@oElemento.descripcion</td>
+                    <td class="cntr">@oElemento.fechaInicio</td>
+                    <td class="cntr">@oElemento.fechaFinal</td>
+                    <td class="cntr">@oElemento.cantidadHrs</td>
+                    <td><a class="btn btn-default" href="~/PCC/Editar/@oElemento.idDetalle">Editar</a></td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+
+<style>
+    .cntr {
+        text-align: center;
+    }
+</style>

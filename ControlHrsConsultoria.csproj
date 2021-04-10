@@ -129,6 +129,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccessController.cs" />
+    <Compile Include="Controllers\PCCController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Filters\VerificaSesion.cs" />
@@ -185,6 +186,8 @@
       <DependentUpon>DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ViewModel\FProyectoViewModel.cs" />
+    <Compile Include="Models\ViewModel\ListPCCViewModel.cs" />
+    <Compile Include="Models\ViewModel\PCCViewModel.cs" />
     <Compile Include="Models\ViewModel\ProyectoViewModel.cs" />
     <Compile Include="Models\ViewModel\RecoveryPasswordViewModel.cs" />
     <Compile Include="Models\ViewModel\RecoveryViewModel.cs" />
@@ -203,10 +206,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="Models\DB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>DB.Context.cs</LastGenOutput>
       <DependentUpon>DB.edmx</DependentUpon>
+      <LastGenOutput>DB.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\DB.edmx.sql" />
     <Content Include="Models\DB.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DB.edmx</DependentUpon>
@@ -254,6 +256,9 @@
     <Content Include="Views\Usuario\Index.cshtml" />
     <Content Include="Views\Usuario\Nuevo.cshtml" />
     <Content Include="Views\Usuario\Editar.cshtml" />
+    <Content Include="Views\Proyecto\Nuevo.cshtml" />
+    <Content Include="Views\PCC\Index.cshtml" />
+    <Content Include="Views\PCC\Editar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

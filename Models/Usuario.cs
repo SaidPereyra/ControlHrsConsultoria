@@ -29,7 +29,6 @@ namespace ControlHrsConsultoria.Models
         public Nullable<System.DateTime> fechaRegistro { get; set; }
         public Nullable<bool> status { get; set; }
         public Nullable<int> idRol { get; set; }
-        public Nullable<int> idCliente { get; set; }
         public string token_recovery { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
